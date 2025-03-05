@@ -17,7 +17,8 @@ public class TaskTest {
     }
     @Test
     public void testUpdateStatus(){
-        Assert.assertTrue(true);
+        Task testtask = new Task();
+        Assert.assertTrue(testtask.updateStatus('W'));
     }
     @Test
     public void testIsOverdue(){
