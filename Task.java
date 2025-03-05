@@ -1,5 +1,8 @@
 public class Task {
 
+    int taskNumber;
+    Member assignedMember
+
     // Method to assign a task to a particular team member
     private boolean assignTo(int team_member){
         return true;
