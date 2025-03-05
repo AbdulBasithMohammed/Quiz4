@@ -6,7 +6,7 @@ public class TaskTest {
     public void testAssignTo() {
         Task testtask = new Task();
         Member testMember = new Member(1,"Abdul","CEO");
-        Assert.assertTrue(testtask.assignTo(testMember));
+        Assert.assertTrue(testtask.assignTo(testMember,testtask));
     }
     @Test
     public void testUpdateStatus(){

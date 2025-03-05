@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.util.List;
 
 public class Task {
 
@@ -9,8 +10,14 @@ public class Task {
     Date dateDue;
 
     // Method to assign a task to a particular team member
-    public boolean assignTo(Member team_member){
-
+    public boolean assignTo(Member team_member, Task task){
+        if(team_member.tasks.contains(task)){
+            System.out.println("Task already assigned to team member");
+            return false;
+        }
+        else{
+            team_member.addTask(task);
+        }
         return true;
     }
     // Method to update task status
