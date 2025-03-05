@@ -4,7 +4,9 @@ import org.junit.Test;
 public class TaskTest {
     @Test
     public void testAssignTo() {
-        Assert.assertTrue(true);
+        Task testtask = new Task();
+        Member testMember = new Member(1,"Abdul","CEO");
+        Assert.assertTrue(testtask.assignTo(testMember));
     }
     @Test
     public void testUpdateStatus(){

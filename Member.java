@@ -1,7 +1,10 @@
+import java.util.List;
+
 public class Member {
     int memberID;
     String memberName;
     String designation;
+    List<Task> tasks;
 
 
     public Member(int memberID, String memberName, String designation) {

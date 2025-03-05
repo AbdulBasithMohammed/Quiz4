@@ -9,7 +9,8 @@ public class Task {
     Date dateDue;
 
     // Method to assign a task to a particular team member
-    private boolean assignTo(int team_member){
+    public boolean assignTo(Member team_member){
+
         return true;
     }
     // Method to update task status
