@@ -1,7 +1,12 @@
+import java.util.Date;
+
 public class Task {
 
     int taskNumber;
-    Member assignedMember
+    Member assignedMember;
+    char taskStatus;
+    Date dateAssigned;
+    Date dateDue;
 
     // Method to assign a task to a particular team member
     private boolean assignTo(int team_member){
