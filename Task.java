@@ -15,10 +15,13 @@ public class Task {
             System.out.println("Task already assigned to team member");
             return false;
         }
-        else{
+        else if(team_member.tasks.isEmpty()){
             team_member.addTask(task);
+            return true;
         }
-        return true;
+        else{
+            return false;
+        }
     }
     // Method to update task status
     private boolean updateStatus(String new_status){

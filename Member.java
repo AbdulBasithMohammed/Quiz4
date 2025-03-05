@@ -1,10 +1,11 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Member {
     int memberID;
     String memberName;
     String designation;
-    List<Task> tasks;
+    List<Task> tasks=new ArrayList<>();
 
 
     public Member(int memberID, String memberName, String designation) {
