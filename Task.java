@@ -24,7 +24,8 @@ public class Task {
         }
     }
     // Method to update task status
-    private boolean updateStatus(String new_status){
+    public boolean updateStatus(char new_status){
+        this.taskStatus = new_status;
         return true;
     }
     // Method to check whether a task is overdue
